@@ -17,6 +17,6 @@ namespace WebApplication.Models
 
         public string Descricao { get; set; }
         //Propriedade de Navegação
-        List<Sessao> Sessoes { get; set; }    
+        public List<Sessao> Sessoes { get; set; }    
     }
 }
