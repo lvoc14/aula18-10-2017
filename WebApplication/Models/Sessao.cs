@@ -7,22 +7,22 @@ using System.Web;
 
 namespace WebApplication.Models
 {
-    [Table("TbSessao")]
+    //[Table("TbSessao")]
     public class Sessao
     {
-        [Key]
+        //[Key]
         public int Codigo { get; set; }
-        [Required]
+        //[Required]
 
         public DateTime DataHoraInicio { get; set; }
-        [Required]
+       // [Required]
 
         public DateTime DataHoraFim { get; set; }
-        [Required]
+       // [Required]
         public decimal ValorInteira { get; set; }
-        [Required]
+       // [Required]
         public decimal ValorMeia { get; set; }
-        [Required]
+       // [Required]
         public bool Encerrada { get; set; }
 
         public int SalaId { get; set; }

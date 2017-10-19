@@ -18,5 +18,11 @@ namespace WebApplication.Context
 
         public DbSet<Sala> Salas { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Sessao>()
+                .HasKey(x => x.Codigo);
+        }
+
     }
 }

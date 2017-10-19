@@ -9,14 +9,16 @@ namespace WebApplication.Models
     public class Sala
     {
         public int SalaId { get; set; }
-        [Required]
+        //[Required]
         public int numero { get; set; }
-        [Required]
+        //[Required]
         public int Capacidade { get; set; }
-        [Required]
+        //[Required]
 
         public string Descricao { get; set; }
         //Propriedade de Navegação
-        public List<Sessao> Sessoes { get; set; }    
+        public List<Sessao> Sessoes { get; set; }
+
+        public string ChaveAcesso { get; set; }
     }
 }
